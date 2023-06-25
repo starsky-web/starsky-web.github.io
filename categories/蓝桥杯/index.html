@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="标签, WJF">
+    <meta name="keywords" content="分类: 蓝桥杯, WJF">
     <meta name="description" content="WJF">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>标签 | WJF</title>
+    <title>分类: 蓝桥杯 | WJF</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -390,55 +390,90 @@
 
     
 
-<div id="tags" class="container chip-container">
+<div id="category-cloud" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
+                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
             </div>
             <div class="tag-chips">
                 
                 
-                <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/" title="蓝桥杯: 1">
+                
+                <a href="/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/" title="蓝桥杯: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            data-tagname="蓝桥杯" style="background-color: #F9EBEA;">蓝桥杯
+                             chip-active "
+                            style="background-color: #F9EBEA;">蓝桥杯
                         <span class="tag-length">1</span>
                     </span>
                 </a>
+                
                 
             </div>
         </div>
     </div>
 </div>
 
-    
-    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
-<style type="text/css">
-    #tag-wordcloud {
-        width: 100%;
-        height: 300px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="tag-wordcloud" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
-<script type="text/javascript">
-    
-
-    $('#tag-wordcloud').jQCloud([{"text":"蓝桥杯","weight":1,"link":"/tags/蓝桥杯/"}], {
-        autoResize: true
-    });
-</script>
 
     
 
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2021/03/02/%E6%89%BE%E5%87%BA%E8%90%BD%E5%8D%95%E7%9A%84%E6%95%B0/">
+                        <div class="card-image tag-image">
+                            
+                            
+                            <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="找出落单的数">
+                            
+                            <span class="card-title">找出落单的数</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                题目一个数组里除了某一个数字之外，其他的数字都出现了两次。请写出程序找出这个只出现一次的数字
+答案对数组进行连续异或，重复的都会被消除，最后剩下的就是落单的数
+public class T1_3 &amp;#123;
+    public 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E8%93%9D%E6%A1%A5%E6%9D%AF/" class="post-category">
+                                    蓝桥杯
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
+                            <span class="chip bg-color">蓝桥杯</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">

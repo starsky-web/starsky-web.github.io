@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>WJF</title>
   
-  
+  <subtitle>长路漫漫</subtitle>
   <link href="https://starsky-web.github.io/atom.xml" rel="self"/>
   
   <link href="https://starsky-web.github.io/"/>

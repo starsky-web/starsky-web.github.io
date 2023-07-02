@@ -4,8 +4,25 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, WJF">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="Thymeleaf笔记, WJF">
+    <meta name="description" content="性能不高，高并发应使用前后段分离
+代码自动提示需要thymeleaf插件
+基本语法
+
+
+表达式名字
+语法
+用途
+
+
+
+变量取值
+${…}
+获取请求域，session域，对象等值，可以使用+拼接字符串或者用|包裹整个表达式
+
+
+选择变量
+*{">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +34,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | WJF</title>
+    <title>Thymeleaf笔记 | WJF</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -335,12 +352,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">Thymeleaf笔记</h1>
                 </div>
             </div>
         </div>
@@ -362,12 +379,33 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
+                            </a>
+                        
+                            <a href="/tags/web%E5%BC%80%E5%8F%91/">
+                                <span class="chip bg-color">web开发</span>
+                            </a>
+                        
+                            <a href="/tags/Thymeleaf/">
+                                <span class="chip bg-color">Thymeleaf</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/java/" class="post-category">
+                                java
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -376,28 +414,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-06-25
+                    2023-07-02
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2023-06-24
+                    2023-07-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    564
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -420,19 +458,128 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <p>性能不高，高并发应使用前后段分离</p>
+<p>代码自动提示需要thymeleaf插件</p>
+<h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><table>
+<thead>
+<tr>
+<th>表达式名字</th>
+<th>语法</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>变量取值</td>
+<td>${…}</td>
+<td>获取请求域，session域，对象等值，可以使用+拼接字符串或者用|包裹整个表达式</td>
+</tr>
+<tr>
+<td>选择变量</td>
+<td>*{…}</td>
+<td>获取上下文对象值</td>
+</tr>
+<tr>
+<td>消息</td>
+<td>#{…}</td>
+<td>获取国际化等值</td>
+</tr>
+<tr>
+<td>链接</td>
+<td>@{…}</td>
+<td>生成链接</td>
+</tr>
+<tr>
+<td>片段表达式</td>
+<td>~{…}</td>
+<td>引入公共页面片段</td>
+</tr>
+</tbody></table>
+<h1 id="设置属性值"><a href="#设置属性值" class="headerlink" title="设置属性值"></a>设置属性值</h1><pre class="line-numbers language-none"><code class="language-none">th:attr&#x3D;表达式
+th:value&#x3D;表达式<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>th:要修改的属性名</p>
+<h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><ol>
+<li>引入starer</li>
+<li>springboot自动配置</li>
+<li>开发页面</li>
+</ol>
+<p>自动配置了SpringTemplateEngine（模板引擎）和ThymeleafViewResolber（视图解析器）</p>
+<p>默认文件存放路径在类路径下的&#x2F;templates&#x2F;</p>
+<p>默认后缀为.html</p>
+<p>使用时需要命名空间避免页面报错，没有命名空间也能正常运行</p>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span> <span class="token attr-name"><span class="token namespace">xmlns:</span>th</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.thymeleaf.org<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>见html标签的xmlns属性</p>
+<h2 id="行内写法"><a href="#行内写法" class="headerlink" title="行内写法"></a>行内写法</h2><pre class="line-numbers language-markup" data-language="markup"><code class="language-markup">[[$&#123;...&#125;]]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>用于直接显示值</p>
+<h2 id="片段引用"><a href="#片段引用" class="headerlink" title="片段引用"></a>片段引用</h2><pre class="line-numbers language-none"><code class="language-none">th:fragment&#x3D;&quot;&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>用于命名片段（也可使用id）</p>
+<p><strong>使用</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">th:replace  替换掉当前标签
+th:include  将原标签内部的内容放入
+th:insert  插入到标签内部<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="常用属性"><a href="#常用属性" class="headerlink" title="常用属性"></a>常用属性</h1><table>
+<thead>
+<tr>
+<th>th:text</th>
+<th>文本的显示，其值会替换html中指定标签的值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>th:utext</td>
+<td>支持heml的文本显示</td>
+</tr>
+<tr>
+<td>th:value</td>
+<td>给属性赋值</td>
+</tr>
+<tr>
+<td>th:object</td>
+<td>用于设置选定对象</td>
+</tr>
+<tr>
+<td>th:if</td>
+<td>条件判断，可以和th:unless配合使用</td>
+</tr>
+<tr>
+<td>th:switch</td>
+<td>选择判断，需要配合th:case使用</td>
+</tr>
+<tr>
+<td>th:each</td>
+<td>循环迭代</td>
+</tr>
+<tr>
+<td>th:href</td>
+<td>设置链接地址，需要用@{}</td>
+</tr>
+</tbody></table>
+<p>th:each属性状态变量iterStat包含以下数据</p>
+<ol>
+<li>index属性，当前迭代索引，从0开始</li>
+<li>count属性，当前迭代索引，从1开始</li>
+<li>size属性，迭代变量中的元素总数</li>
+<li>current属性，每次迭代的iter变量</li>
+<li>even&#x2F;odd布尔属性，当前迭代是偶数还是奇数</li>
+<li>first属性，是否是第一个，布尔值</li>
+<li>last属性，是否是最后一个，布尔值</li>
+</ol>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><p>可在Springboot的配置文件中配置前缀（文件路径）和后缀，有默认值</p>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token key attr-name">spring.thymeleaf.prefix</span><span class="token punctuation">=</span><span class="token value attr-value">classpath:/templates/</span>
+<span class="token key attr-name">spring.thymeleaf.suffix</span><span class="token punctuation">=</span><span class="token value attr-value">.html</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -459,7 +606,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://starsky-web.github.io/2023/06/25/hello-world/">https://starsky-web.github.io/2023/06/25/hello-world/</a>
+                    <a href="https://starsky-web.github.io/2023/07/02/Thymeleaf/">https://starsky-web.github.io/2023/07/02/Thymeleaf/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -496,7 +643,19 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
+                                </a>
+                            
+                                <a href="/tags/web%E5%BC%80%E5%8F%91/">
+                                    <span class="chip bg-color">web开发</span>
+                                </a>
+                            
+                                <a href="/tags/Thymeleaf/">
+                                    <span class="chip bg-color">Thymeleaf</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -573,9 +732,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2023/07/02/Thymeleaf/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Thymeleaf笔记">
+                        
+                        <span class="card-title">Thymeleaf笔记</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/java/" class="post-category">
+                                    java
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
+                    </a>
+                    
+                    <a href="/tags/web%E5%BC%80%E5%8F%91/">
+                        <span class="chip bg-color">web开发</span>
+                    </a>
+                    
+                    <a href="/tags/Thymeleaf/">
+                        <span class="chip bg-color">Thymeleaf</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2023/06/30/Redis/">
                     <div class="card-image">
@@ -593,9 +811,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-06-30
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-06-30
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -621,59 +839,6 @@
                     
                     <a href="/tags/web%E5%BC%80%E5%8F%91/">
                         <span class="chip bg-color">web开发</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/03/02/%E6%89%BE%E5%87%BA%E8%90%BD%E5%8D%95%E7%9A%84%E6%95%B0/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="找出落单的数">
-                        
-                        <span class="card-title">找出落单的数</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-03-02
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
-                                    算法
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E7%AE%97%E6%B3%95/">
-                        <span class="chip bg-color">算法</span>
-                    </a>
-                    
-                    <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">
-                        <span class="chip bg-color">蓝桥杯</span>
                     </a>
                     
                 </div>

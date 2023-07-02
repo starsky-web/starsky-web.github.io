@@ -6,7 +6,7 @@
   <link href="https://starsky-web.github.io/atom.xml" rel="self"/>
   
   <link href="https://starsky-web.github.io/"/>
-  <updated>2023-06-30T09:36:46.045Z</updated>
+  <updated>2023-07-02T06:24:48.479Z</updated>
   <id>https://starsky-web.github.io/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Thymeleaf笔记</title>
+    <link href="https://starsky-web.github.io/2023/07/02/Thymeleaf/"/>
+    <id>https://starsky-web.github.io/2023/07/02/Thymeleaf/</id>
+    <published>2023-07-01T16:00:00.000Z</published>
+    <updated>2023-07-02T06:24:48.479Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;性能不高，高并发应使用前后段分离&lt;/p&gt;
+&lt;p&gt;代码自动提示需要thymeleaf插件&lt;/p&gt;
+&lt;h1 id=&quot;基本语法&quot;&gt;&lt;a href=&quot;#基本语法&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="java" scheme="https://starsky-web.github.io/categories/java/"/>
+    
+    
+    <category term="java" scheme="https://starsky-web.github.io/tags/java/"/>
+    
+    <category term="web开发" scheme="https://starsky-web.github.io/tags/web%E5%BC%80%E5%8F%91/"/>
+    
+    <category term="Thymeleaf" scheme="https://starsky-web.github.io/tags/Thymeleaf/"/>
+    
+  </entry>
   
   <entry>
     <title>redis学习笔记</title>

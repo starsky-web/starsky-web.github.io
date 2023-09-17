@@ -65,11 +65,11 @@
     <category term="java" scheme="https://starsky-web.github.io/categories/java/"/>
     
     
-    <category term="Thymeleaf" scheme="https://starsky-web.github.io/tags/Thymeleaf/"/>
+    <category term="java" scheme="https://starsky-web.github.io/tags/java/"/>
     
     <category term="web开发" scheme="https://starsky-web.github.io/tags/web%E5%BC%80%E5%8F%91/"/>
     
-    <category term="java" scheme="https://starsky-web.github.io/tags/java/"/>
+    <category term="Thymeleaf" scheme="https://starsky-web.github.io/tags/Thymeleaf/"/>
     
   </entry>
   
@@ -94,11 +94,11 @@
     <category term="java" scheme="https://starsky-web.github.io/categories/java/"/>
     
     
-    <category term="web开发" scheme="https://starsky-web.github.io/tags/web%E5%BC%80%E5%8F%91/"/>
+    <category term="redis" scheme="https://starsky-web.github.io/tags/redis/"/>
     
     <category term="java" scheme="https://starsky-web.github.io/tags/java/"/>
     
-    <category term="redis" scheme="https://starsky-web.github.io/tags/redis/"/>
+    <category term="web开发" scheme="https://starsky-web.github.io/tags/web%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   

@@ -6,7 +6,7 @@
   <link href="https://starsky-web.github.io/atom.xml" rel="self"/>
   
   <link href="https://starsky-web.github.io/"/>
-  <updated>2023-07-02T06:24:48.479Z</updated>
+  <updated>2023-09-17T09:59:35.148Z</updated>
   <id>https://starsky-web.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件设计师-知识产权</title>
+    <link href="https://starsky-web.github.io/2023/09/17/%E8%BD%AF%E8%80%83%E4%B8%AD%E7%BA%A7-%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83/"/>
+    <id>https://starsky-web.github.io/2023/09/17/%E8%BD%AF%E8%80%83%E4%B8%AD%E7%BA%A7-%E7%9F%A5%E8%AF%86%E4%BA%A7%E6%9D%83/</id>
+    <published>2023-09-16T16:00:00.000Z</published>
+    <updated>2023-09-17T09:59:35.148Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;考查&quot;&gt;&lt;a href=&quot;#考查&quot; class=&quot;headerlink&quot; title=&quot;考查&quot;&gt;&lt;/a&gt;考查&lt;/h1&gt;&lt;p&gt;有2-3题，题号可能在10和12&lt;/p&gt;
+&lt;h1 id=&quot;著作权&quot;&gt;&lt;a href=&quot;#著作权&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/categories/%E8%BD%AF%E8%80%83/"/>
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/tags/%E8%BD%AF%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>Thymeleaf笔记</title>

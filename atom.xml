@@ -6,7 +6,7 @@
   <link href="https://starsky-web.github.io/atom.xml" rel="self"/>
   
   <link href="https://starsky-web.github.io/"/>
-  <updated>2023-09-17T09:59:35.148Z</updated>
+  <updated>2023-09-29T07:53:09.724Z</updated>
   <id>https://starsky-web.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件设计师-信息安全</title>
+    <link href="https://starsky-web.github.io/2023/09/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/"/>
+    <id>https://starsky-web.github.io/2023/09/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/</id>
+    <published>2023-09-28T16:00:00.000Z</published>
+    <updated>2023-09-29T07:53:09.724Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;防火墙&quot;&gt;&lt;a href=&quot;#防火墙&quot; class=&quot;headerlink&quot; title=&quot;防火墙&quot;&gt;&lt;/a&gt;防火墙&lt;/h1&gt;&lt;h2 id=&quot;包过滤防火墙&quot;&gt;&lt;a href=&quot;#包过滤防火墙&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/categories/%E8%BD%AF%E8%80%83/"/>
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/tags/%E8%BD%AF%E8%80%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件设计师-结构化开发</title>
+    <link href="https://starsky-web.github.io/2023/09/29/%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91/"/>
+    <id>https://starsky-web.github.io/2023/09/29/%E7%BB%93%E6%9E%84%E5%8C%96%E5%BC%80%E5%8F%91/</id>
+    <published>2023-09-28T16:00:00.000Z</published>
+    <updated>2023-09-29T07:52:33.189Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;两分左右&lt;/p&gt;
+&lt;h1 id=&quot;耦合&quot;&gt;&lt;a href=&quot;#耦合&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/categories/%E8%BD%AF%E8%80%83/"/>
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/tags/%E8%BD%AF%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>软件设计师-知识产权</title>

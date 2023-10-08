@@ -6,7 +6,7 @@
   <link href="https://starsky-web.github.io/atom.xml" rel="self"/>
   
   <link href="https://starsky-web.github.io/"/>
-  <updated>2023-09-29T07:53:09.724Z</updated>
+  <updated>2023-10-08T08:35:45.901Z</updated>
   <id>https://starsky-web.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>软件设计师-计算机网络</title>
+    <link href="https://starsky-web.github.io/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    <id>https://starsky-web.github.io/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
+    <published>2023-10-07T16:00:00.000Z</published>
+    <updated>2023-10-08T08:35:45.901Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;网络设备&quot;&gt;&lt;a href=&quot;#网络设备&quot; class=&quot;headerlink&quot; title=&quot;网络设备&quot;&gt;&lt;/a&gt;网络设备&lt;/h1&gt;&lt;h2 id=&quot;物理层&quot;&gt;&lt;a href=&quot;#物理层&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/categories/%E8%BD%AF%E8%80%83/"/>
+    
+    
+    <category term="软考" scheme="https://starsky-web.github.io/tags/%E8%BD%AF%E8%80%83/"/>
+    
+  </entry>
   
   <entry>
     <title>软件设计师-信息安全</title>

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>软件设计师-计算机网络</title>
+      <link href="/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+      <url>/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
+      
+        <content type="html"><![CDATA[<h1 id="网络设备"><a href="#网络设备" class="headerlink" title="网络设备"></a>网络设备</h1><h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><p>物理层不能隔离广播域和冲突域</p><p>中继器，集线器</p><p>集线器可看成是特殊的多路中继器</p><h2 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h2><p>可以隔离冲突域不能隔离广播域</p><p>网桥，交换机</p><p>交换机是多端口的网桥</p><h2 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h2><p>可以隔离广播域和冲突域</p><p>路由器</p><h2 id="应用层"><a href="#应用层" class="headerlink" title="应用层"></a>应用层</h2><p>网关</p><h1 id="协议簇"><a href="#协议簇" class="headerlink" title="协议簇"></a>协议簇</h1><table><thead><tr><th>应用层</th><th>文件传输协议（FTP）往下两行相同</th><th>远程登录协议（Telnet）</th><th>电子邮件协议（SMTP）</th><th>网络文件服务协议（NFS）</th><th>网络管理协议（SNMP）</th><th>应用层</th></tr></thead><tbody><tr><td>表示层</td><td></td><td></td><td></td><td></td><td></td><td>应用层</td></tr><tr><td>会话层</td><td></td><td></td><td></td><td></td><td></td><td>应用层</td></tr><tr><td>传输层</td><td>TCP（本行只有这两个）</td><td>UDP</td><td></td><td></td><td></td><td>传输层</td></tr><tr><td>网络层</td><td>IP（本行三个）</td><td>ICMP</td><td>ARP  RARP</td><td></td><td></td><td>网际层</td></tr><tr><td>数据链路层</td><td>Ethemet   IEEE 802.3</td><td>FDDI</td><td>Token-Ring&#x2F;IEEE 802.5</td><td>ARCnet</td><td>PPS&#x2F;SLIP</td><td>网络接口层</td></tr><tr><td>物理层</td><td>与上一行合并</td><td></td><td></td><td></td><td></td><td>硬件层</td></tr></tbody></table><p>最左侧为ISO-OSI模型，右侧为TCP&#x2F;IP模型，中间为TCP&#x2F;IP协议</p><p>tcp相关协议</p><ol><li>pop3，端口110</li><li>ftp，端口20&#x2F;21</li><li>http，端口80</li><li>Temnet，端口23</li><li>smtp，端口25</li></ol><p>udp相关协议</p><ol><li>dhcp，端口67</li><li>tftp，端口69</li><li>snmp，端口161</li><li>dns，端口53</li></ol><h1 id="TCP和UDP"><a href="#TCP和UDP" class="headerlink" title="TCP和UDP"></a>TCP和UDP</h1><h2 id="网际层协议-ip"><a href="#网际层协议-ip" class="headerlink" title="网际层协议-ip"></a>网际层协议-ip</h2><p>ip所提供的服务 通常认为是无连接的和不可靠的，即在没有确定目标系统已做好接收数据准备之前就发送数据</p><p>与此对应的就是面向连接的tcp协议，在应用层数据传输之前需要进行三次握手</p><h2 id="传输层协议-tcp"><a href="#传输层协议-tcp" class="headerlink" title="传输层协议-tcp"></a>传输层协议-tcp</h2><p>可靠传输，连接管理，差错校验和重传，流量控制，拥塞控制，端口寻址</p><p>其中流量控制采用的是可变大小的滑动窗口协议</p><h2 id="传输层协议-udp"><a href="#传输层协议-udp" class="headerlink" title="传输层协议-udp"></a>传输层协议-udp</h2><p>用户数据报协议是一种不可靠的无连接的协议，可以保证应用程序进程间的通信</p><p>tcp有助于提供可靠性，udp有助于提高传输速率</p><p>没有差错校验和重传，不对接收到的无序ip数据报重新排序，不消除重复的ip数据报，不确认已收到的数据报，不负责建立或终止连接，这些问题由应用程序处理</p><h1 id="SMTP和POP3"><a href="#SMTP和POP3" class="headerlink" title="SMTP和POP3"></a>SMTP和POP3</h1><p>smtp（端口25）发送邮件</p><p>pop3（端口110）接收邮件</p><p>email系统基于c&#x2F;s模式</p><p>email服务器主要采用smtp协议，此协议描述了电子邮件的信息格式及其传递处理方法，保证被传送的邮件能够正确寻址和可靠的传输，是面向文本的的网络协议</p><p>缺点是不能传输费ascII码的文本和非文字性附件</p><p>后来的MIME协议（邮件扩充协议）及PEM协议（强私密邮件保护协议）弥补了smtp的缺点</p><p>smtp和pop3都是利用tcp端口</p><h1 id="ARP和RARP"><a href="#ARP和RARP" class="headerlink" title="ARP和RARP"></a>ARP和RARP</h1><p>地址解析协议（ARP）</p><p>反地址解析协议（RARP）</p><p>都是网络层中的重要协议，ARP的作用是将ip地址转换为物理地址（mac地址），rarp的作用相反</p><p>ARP的工作过程，当计算机需要与其他计算机通信时，首先查询ARP高速缓存，如果有，则使用对应的物理地址直接发送给对应的物理网卡</p><p>如果没有，则在局域网上广播一个ARP请求包，对应ip的计算机会发送ARP应答包，ARP将对应的信息添加到高速缓存中</p><h1 id="DHCP"><a href="#DHCP" class="headerlink" title="DHCP"></a>DHCP</h1><p>动态主机配置协议</p><p>功能是集中的管理、分配ip地址，是网络中的主机动态的获取ip地址</p><p>DHCP客户端可以从DHCP服务器获得本机ip地址，DNS服务器地址、DHCP服务器地址和默认网关的地址等</p><p>169.254.X.X为windows下的无效地址</p><p>0.0.0.0为linux下的无效地址</p><h1 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h1><p>协议名:&#x2F;&#x2F;主机名&#x2F;域名&#x2F;域名后缀&#x2F;域名分类&#x2F;目录&#x2F;网页文件</p><h1 id="IP地址和子网掩码"><a href="#IP地址和子网掩码" class="headerlink" title="IP地址和子网掩码"></a>IP地址和子网掩码</h1><p>ip地址可以分为A类，B类，C类，D类和E类，全0代表的是网络（主机地址），全1代表的是广播</p><p>A类地址占有一个字节（8位）最高位为0，其余7位为真正的网络地址，第一个字节的值为0—-127，子网掩码255.0.0.0</p><p>B类占两个字节最高两位为10，其余14位为网络地址，第一个字节位128—191，子网掩码255.255.0.0</p><p>C类占3个，是最通用的ip地址，最高位为110，第一个字节位192—-233，子网掩码255.255.255.0</p><p>D类最高位为1110，第一个字节位224—239</p><p>E类为实验保留，识别头是1111，第一个字节为240—255</p><h1 id="IPV6"><a href="#IPV6" class="headerlink" title="IPV6"></a>IPV6</h1><p>ipv6具有长达128位的地址空间</p><h1 id="Windows命令"><a href="#Windows命令" class="headerlink" title="Windows命令"></a>Windows命令</h1><p>ipconfig命令：显示所有网络适配器的ip地址、子网养马和缺省网关值</p><p>参数：如ipconfig&#x2F;release：DHCP客户端手动释放ip地址</p><p>flushdns：清除本地DNS缓存</p><p>displaydns：显示本地dns内容 </p><p>registerdns：DNS客户端手动想服务器进行注册</p><p>all：显示所有网络适配器的完整TCP&#x2F;IP配置信息，包括DHCP服务是否已启动</p><p>renew：DHCP客户端想服务器刷新请求（重新申请IP地址）</p><h1 id="路由"><a href="#路由" class="headerlink" title="路由"></a>路由</h1><p>当windows服务器收到一个ip数据包时，先查找主机路由，在查找网络路由（直连网络和远程网络），这些路由查找失败时，最后才查找默认路由</p><p>主机路由是到达特定主机的路由，子网掩码是255.255.255.255</p><p>默认路由是无法找到确定路由时使用的路由，目标网络和网络掩码都是0.0.0.0</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>软件设计师-信息安全</title>
       <link href="/2023/09/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/"/>
       <url>/2023/09/29/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/</url>

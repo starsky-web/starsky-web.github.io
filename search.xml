@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>软件设计师-uml</title>
+      <link href="/2023/10/13/uml/"/>
+      <url>/2023/10/13/uml/</url>
+      
+        <content type="html"><![CDATA[<h1 id="事物"><a href="#事物" class="headerlink" title="事物"></a>事物</h1><p>uml中有4中事物，结构事物，行为事物，分组事物和注释事物</p><p>结构事物是uml模型中的名词，通常是模型的静态部分，描述概念或物理元素</p><p>行为事物是uml的动态部分，是模型中的动词，描述了跨越时间和空间的行为</p><p>分组事物是uml模型中的组织部分，是一些由模型分解成的盒子，在所有的分组事物中，最主要的分组事物是包，仅在开发时存在</p><p>注释事物是uml模型终端解释部分，用来描述说明和标注模型的任何元素</p><h1 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h1><p>有4种关系，依赖、关联、泛化和实现</p><h2 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h2><p>依赖是两个事物间的语义关系，其中一个事物（独立事物）发生变化会影响另一个事物（依赖事物）</p><p>图形上为有方向的虚线（指向独立事物）</p><h2 id="关联"><a href="#关联" class="headerlink" title="关联"></a>关联</h2><p>关联是一种结构关系，描述了一组链，链式对象之间的连接</p><p>聚集是特殊的关联，描述了整体和部分间的结构关系（箭头指向整体）</p><p><img src="https://raw.githubusercontent.com/starsky-web/pic/master/image-20231013105557048.png" alt="image-20231013105557048"></p><p>聚集又分聚合和组合</p><p>部分和整体生命周期不一致为聚合，部分和整体生命周期一致为组合</p><h3 id="单向关联"><a href="#单向关联" class="headerlink" title="单向关联"></a>单向关联</h3><h2 id="泛化"><a href="#泛化" class="headerlink" title="泛化"></a>泛化</h2><p>泛化是一种特殊&#x2F;一般关系，特殊元素（子元素）的对象可替代一般元素（父元素）</p><p>图形箭头指向父元素</p><p><img src="https://raw.githubusercontent.com/starsky-web/pic/master/image-20231013105619895.png" alt="image-20231013105619895"></p><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>带空心箭头的虚线，指向接口</p><h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="类图"><a href="#类图" class="headerlink" title="类图"></a>类图</h2><p>类图展现了一组对象、接口、协作和它们之间的关系</p><h2 id="对象图"><a href="#对象图" class="headerlink" title="对象图"></a>对象图</h2><p>展现了某一时刻一组对象以及他们之间的关系，描述了在类图中所建立的事物的实例的静态快照</p><h2 id="用例图"><a href="#用例图" class="headerlink" title="用例图"></a>用例图</h2><p>展现了一组用例、参与者以及他们之间的关系</p><p>包括</p><ol><li>用例</li><li>参与者</li><li>用例之间的扩展关系和包含关系，参与者和用例之间的关联关系，用例与用例以及参与者与参与者之间的泛化关系</li></ol><h3 id="包含关系"><a href="#包含关系" class="headerlink" title="包含关系"></a>包含关系</h3><p>用例与用例之间的关系</p><p>用虚线箭头表示，线上标明include，指向被包含的用例</p><h3 id="扩展关系"><a href="#扩展关系" class="headerlink" title="扩展关系"></a>扩展关系</h3><p>用例与用例之间的关系</p><p>一个用例执行的时候，可能会发生特殊情况或者可选情况，这种情况就是这个用例的扩展用例</p><p>图形为虚线箭头，指向基本用例，标注extend</p><h3 id="泛化关系"><a href="#泛化关系" class="headerlink" title="泛化关系"></a>泛化关系</h3><h2 id="交互图"><a href="#交互图" class="headerlink" title="交互图"></a>交互图</h2><p>交互图用于对系统的动态方面进行建模，一张交互图表现的是一个交互，由一组对象和他们之间的关系组成，包含他们之间可能传递的消息</p><h3 id="序列图（顺序图）"><a href="#序列图（顺序图）" class="headerlink" title="序列图（顺序图）"></a>序列图（顺序图）</h3><p>强调消息时间顺序的交互图</p><h3 id="通信图"><a href="#通信图" class="headerlink" title="通信图"></a>通信图</h3><p>强调接收和发送消息的对象的结构组织的交互图</p><h2 id="状态图"><a href="#状态图" class="headerlink" title="状态图"></a>状态图</h2><p>展现了一个状态机，由状态、转换、事件和活动组成、状态图关注系统的动态视图，对于接口、类和协作的行为建模尤为重要</p><h3 id="状态和活动"><a href="#状态和活动" class="headerlink" title="状态和活动"></a>状态和活动</h3><p>状态是任何可以被观察到的系统行为模式，一个状态代表系统的一种行为模式，状态规定了系统对事件的响应方式</p><p>状态图中定义的状态主要有初态、终态和中间状态</p><h3 id="转换和事件"><a href="#转换和事件" class="headerlink" title="转换和事件"></a>转换和事件</h3><p>状态图的转换用一条带箭头的线表示</p><p>在箭头上标注事件</p><h2 id="活动图"><a href="#活动图" class="headerlink" title="活动图"></a>活动图</h2><p>是一类特殊的状态图，展现了在系统内从一个活动到另一个活动的流程</p><p>专注于系统的动态视图，对于系统的功能建模特别重要，并强调对象间的控制流程</p><h2 id="构件图（组件图）"><a href="#构件图（组件图）" class="headerlink" title="构件图（组件图）"></a>构件图（组件图）</h2><p>展现了一组构件之间的组织和依赖，专注于系统的静态实现视图</p><h2 id="部署图"><a href="#部署图" class="headerlink" title="部署图"></a>部署图</h2><p>是用来对面向对象系统的物理方面建模的方法，展现了运行时处理节点以及其中构件的配置</p><p>部署图展现了系统的软件和硬件之间的关系，在实施阶段使用</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软考 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软考 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>软件设计师-计算机网络</title>
       <link href="/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
       <url>/2023/10/08/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
